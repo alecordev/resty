@@ -1,0 +1,12 @@
+tests:
+  - action: get
+    endpoint: http://httpbin.org/get
+    parameters:
+  - action: post
+    endpoint: http://httpbin.org/post
+    parameters:
+      field: value
+  - action: post
+    endpoint: http://httpbin.org/post
+    parameters:
+      field2: value2
