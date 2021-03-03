@@ -6,7 +6,16 @@ tests:
     save_response: False
     save_dir: data
     save_extension: json
-    save_prefix: post
+    save_prefix: get
+  - name: Simple GET Request
+    action: get
+    endpoint: http://httpbin.org/get
+    parameters:
+      field_get: value_get
+    save_response: False
+    save_dir: data
+    save_extension: json
+    save_prefix: get
   - name: Simple POST Request
     action: post
     endpoint: http://httpbin.org/post

@@ -1,0 +1,37 @@
+tests:
+  - name: Simple GET Request
+    action: get
+    endpoint: http://httpbin.org/get
+    parameters:
+    save_response: False
+    save_dir: data
+    save_extension: json
+    save_prefix: get
+  - name: Simple GET Request
+    action: get
+    endpoint: http://httpbin.org/get
+    parameters:
+      field_get: value_get
+    save_response: False
+    save_dir: data
+    save_extension: json
+    save_prefix: get
+  - name: Simple POST Request
+    action: post
+    endpoint: http://httpbin.org/post
+    parameters:
+      field: value
+    save_response: True
+    save_dir: data
+    save_extension: json
+    save_prefix: post
+  - name: Simple POST Request 2
+    action: post
+    endpoint: http://httpbin.org/post
+    parameters:
+      field1: value1
+      field2: value2
+    save_response: False
+    save_dir: data
+    save_extension: json
+    save_prefix: post

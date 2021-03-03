@@ -1,11 +1,11 @@
 # resty
 
-aiohttp REST client.
+aiohttp and requests based REST client.
 
 ## Features
 
 - GET, POST requests.
-- Save responses in configurable filenames.
+- Saves responses in configurable filenames.
 
 ## Requirements
 
